@@ -1,0 +1,464 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+}
+/* Navbar */
+.bg-black
+{
+    background-color: #040404;
+}
+a
+{
+    color: #fff!important;
+    text-decoration: none;
+}
+.navbar-brand , .nav-link
+{
+    font-weight: 600;
+}
+.nav-item a
+{
+    position: relative;
+}
+.nav-item a::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    bottom: 0;
+    left: 7px;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+}
+  
+  .nav-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+nav .fa-solid
+{
+    font-weight: 600 !important;
+}
+.navbar-brand:hover
+{
+    color: #fff;
+}
+.dropdown-menu li{
+    padding: 7px 15px 7px 0px;
+}
+.dropdown-menu a{
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.dropdown-menu a:hover{
+    color: #0078FF !important;
+}
+
+/* Header */
+header
+{
+  background-image: url(../images/hero-bg.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   
+}
+.layer
+{
+    background-color: rgba(4, 4, 4 , 0.5);
+}
+header h1
+{
+    font-size: 72px;
+    margin: 10px 0px;
+}
+header span
+{
+    font-size: 40px;
+}
+header span::after
+{
+    content: '|';
+    animation-name: anime;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes anime {
+    1%{content: 'D|'}
+    2%{content: 'De|'}
+    3%{content: 'Des|'}
+    4%{content: 'Desi|'}
+    5%{content: 'Desig|'}
+    6%{content: 'Design|'}
+    7%{content: 'Designe|'}
+    15%{content: 'Designer|'}
+    16%{content: 'Designe|'}
+    17%{content: 'Design|'}
+    18%{content: 'Desig|'}
+    19%{content: 'Desi|'}
+    20%{content: 'Des|'}
+    21%{content: 'Dev|'}
+    22%{content: 'Deve|'}
+    23%{content: 'Devel|'}
+    24%{content: 'Develo|'}
+    25%{content: 'Develop|'}
+    26%{content: 'Develope|'}
+    34%{content: 'Developer|'}
+    35%{content: 'Develope|'}
+    36%{content: 'Develop|'}
+    37%{content: 'Develo|'}
+    38%{content: 'Devel|'}
+    39%{content: 'Deve|'}
+    40%{content: 'Dev|'}
+    41%{content: 'De|'}
+    42%{content: 'D|'}
+    43%{content: 'F|'}
+    44%{content: 'Fr|'}
+    45%{content: 'Fre|'}
+    46%{content: 'Free|'}
+    47%{content: 'Freel|'}
+    48%{content: 'Freela|'}
+    49%{content: 'Freelan|'}
+    50%{content: 'Freelanc|'}
+    51%{content: 'Freelance|'}
+    56%{content: 'Freelancer|'}
+    57%{content: 'Freelance|'}
+    58%{content: 'Freelanc|'}
+    59%{content: 'Freelan|'}
+    60%{content: 'Freela|'}
+    61%{content: 'Freel|'}
+    62%{content: 'Free|'}
+    63%{content: 'Fre|'}
+    64%{content: 'Fr|'}
+    65%{content: 'F|'}
+    66%{content: 'P'}
+    67%{content: 'Ph|'}
+    68%{content: 'Pho|'}
+    69%{content: 'Phot|'}
+    70%{content: 'Photo|'}
+    71%{content: 'Photog|'}
+    72%{content: 'Photogr|'}
+    73%{content: 'Photogra|'}
+    74%{content: 'Photograp|'}
+    75%{content: 'Photograph|'}
+    76%{content: 'Photographe|'}
+    83%{content: 'Photographer|'}
+    84%{content: 'Photographe|'}
+    85%{content: 'Photograph|'}
+    86%{content: 'Photograp|'}
+    87%{content: 'Photogra|'}
+    88%{content: 'Photogr|'}
+    89%{content: 'Photog|'}
+    90%{content: 'Photo|'}
+    91%{content: 'Phot|'}
+    92%{content: 'Pho|'}
+    93%{content: 'Ph|'}
+    94%{content: 'P|'}
+    100%{content: '|'}
+}
+  
+/* About */
+.about span
+{
+    font-size: 17.6px;
+    font-weight: 500;
+}
+.fs-normal
+{
+    font-size: 16px;
+}
+.text-grey
+{
+    color:
+#4e4e4e;
+}
+.progress { 
+    height: 0.6rem !important;
+    border-radius: 0rem !important;
+}
+.p-progress {
+    margin-bottom: 0.5rem;
+}
+.line , .line-blue
+{
+    background-color: #0078FF;
+}
+.line
+{
+    height: 3px;
+    width: 15%;
+}
+.line-blue
+{
+    height: 5px;
+    width: 40px;
+    margin: auto;
+}
+.about .content
+{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+/* Services */
+h2
+{
+    font-size: 48px;
+    font-weight: 700;
+}
+h4
+{
+    font-size: 22.4px;
+    font-weight: 500;
+    padding: 10px 0px 5px;
+}
+.services i
+{
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    color: #040404;
+    font-size: 40px;
+    border: 8px solid #0078FF;
+    transition: all 0.5s;
+}
+.services .content
+{
+    border-radius: 25px;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.shadow-bottom
+{
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.services .content:hover i
+{
+    background-color: #0078FF;
+    border: 8px solid #76b6ff;
+}
+.text-lightblue
+{
+    color: #0078FF;
+}
+
+/* Awards */
+.awards
+{
+    background-image: url(../images/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-lightblue
+{
+    background-color: rgba(0, 120, 255 , 0.7);
+}
+.awards i
+{
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    color: #fff;
+    font-size:32px;
+    border: 8px solid #CDE1F8;
+    transition: all 0.5s;
+}
+h3
+{
+    font-size: 32px;
+}
+
+/* Portfolio */
+.port span
+{
+    font-size: 12.8px;
+}
+.port-img{overflow: hidden;}
+.port img
+{
+    transition: all 1s;
+    
+    cursor: pointer;
+}
+.port .content:hover img
+{
+    transform: scale(1.3);
+}
+.port i
+{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #0078FF;
+    font-size: 23px;
+    border: 3px solid #0078FF;
+}
+h5{
+    font-size: 19.2px;
+}
+.end-10
+{
+    right: 7px;
+}
+.bottom-20
+{
+    bottom: 17px;
+}
+
+/* Clients */
+.clients
+{
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.clients h6{
+    font-size: 22.4px;
+}
+.clients button {
+    width: 10px !important;
+    height: 10px !important;
+    /* margin-bottom: 10px !important; */
+    border-radius: 50%;
+}
+
+/* Blog */
+.w-10
+{
+    width: 18%;
+}
+.blog a
+{
+    transition: color 0.5s;
+}
+.blog .card-body a:hover 
+{
+    color: #0078FF !important;
+}
+.blog .footer-left:hover a , .blog .footer-left a:hover 
+{
+    color: #0078FF !important;
+}
+.footer-left img
+{
+    width: 32px !important;
+    height: 32px !important;
+    cursor: pointer;
+}
+.w-60
+{
+    width: 70%;
+}
+.blog .card-category-box {
+    text-align: center;
+    top: -16px;
+    left: 15px;
+    right: 15px;
+    
+    overflow: hidden;
+}
+.blog .card-category {
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px 5px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 4px;
+}
+.blog .card-category .category {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+/* Contact us */
+.contact
+{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact .form-group
+{
+    border-radius: 0px !important;
+    margin-bottom: 15px;
+}
+.form-control
+{
+    border-radius: 0px !important;
+}
+.contactus i
+{
+    color: #0078FF;
+}
+.contact button
+{
+    background-color: #0078FF !important;
+    transition: all 0.5s;
+    border: 4px solid #fff;
+    margin-top: 10px;
+}
+.contact button:hover
+{
+    background-color: #3393FF;
+    border: 4px solid #76b6ff;
+}
+.icons i
+{
+    width: 45px;
+    height: 45px;
+    border: 3px solid #0078FF;
+    font-size: 1.2rem;
+    margin: 10px 10px 0px 0px;
+    transition: all 0.5s;
+}
+.icons i:hover 
+{
+    background-color: #0078FF;
+    border: 3px solid #76b6ff;
+    color: #fff;
+}
+
+/* Footer */
+.footer{
+    background-color: #0062D3;
+    line-height: 12px !important;
+}
+
+/* Arrow up */
+.arrow-up
+{
+    position: fixed;
+    bottom: 12px;
+    right: 10px;
+    z-index: 999;
+}
+.arrow-up i
+{
+    width: 40px;
+    height: 40px;
+    background-color: #0062D3;
+    color: #fff;
+    transition: all 0.5s;
+}
+.arrow-up i:hover{
+    background-color: #0078FF;
+}
+.back-to-top.active
+{
+    opacity: 1;
+    visibility: visible;
+}
+.back-to-top
+{
+    opacity: 0;
+    visibility: hidden;
+}
